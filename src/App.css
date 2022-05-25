@@ -12,6 +12,11 @@ body{
 ul{
   list-style-type: none;
 }
+.todo-button{
+  margin-left: 5px;
+  font-size: 15px;
+  
+}
 .container{
   opacity: 0.8;
   background-color: black;
@@ -20,6 +25,12 @@ ul{
   margin-right: 150px;
   margin-top: 70px;
   
+}
+.done{
+  background-color: green;
+}
+.todos{
+  color: white;
 }
 
 .title{
