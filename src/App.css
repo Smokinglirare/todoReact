@@ -28,9 +28,23 @@ ul{
 }
 .done{
   background-color: green;
+  border-radius: 10px;
+}
+.notDone{
+  border-radius: 10px;
 }
 .todos{
   color: white;
+}
+.text{
+  color: #20C20E;
+  font-family: Sliced;
+  font-size: 25px;
+}
+
+.deleteButton{
+  background-color: 	#CD5C5C;
+  border-radius: 10px;
 }
 
 .title{

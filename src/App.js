@@ -78,8 +78,6 @@ function App() {
       })
   }
 
-
-
   function handleDelete(id) {
     fetch(`http://localhost:5000/todos/${id}`, {
       method: "DELETE"
@@ -88,10 +86,6 @@ function App() {
         getTodos();
       })
   }
-
-
-
-
 
   function getTodos() {
     axios
@@ -135,7 +129,7 @@ function App() {
           </form>
           <ul className="todos">
             {todos.map(todo => (
-              <li key={todo.id}><button className={todo.completed ? "done" : ""} onClick={() => handleUpdate(todo.id)}><MdOutlineDone /></button> {todo.todo} <button onClick={() => handleDelete(todo.id)}><ImCross /></button></li>
+              <li key={todo.id} className="text"><button className={todo.completed ? "done" : "notDone"} onClick={() => handleUpdate(todo.id)}><MdOutlineDone /></button> {todo.todo} <button className="deleteButton" onClick={() => handleDelete(todo.id)}><ImCross /></button></li>
             ))}
           </ul>
 
